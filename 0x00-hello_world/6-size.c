@@ -6,7 +6,6 @@
  */
 int main(void)
 {
-	printf("size of double is: %ld - byte\n", sizeof(double));
 	printf("size of float is: %ld - byte\n", sizeof(float));
 	printf("size of char is: %ld - byte\n", sizeof(char));
 	printf("size of int is: %ld - byte\n", sizeof(int));
