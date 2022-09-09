@@ -7,13 +7,14 @@
  */
 int main(void)
 {
-	int c;
+	char c;
 
-	c = ' ';
+	c = 'a';
 	while (c >= 'z')
 	{
-		c = getc(stdin);
 		putchar(c);
+		c++;
 	}
+		putchar('\n');
 	return (0);
 }
