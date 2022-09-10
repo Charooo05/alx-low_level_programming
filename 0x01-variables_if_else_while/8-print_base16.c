@@ -10,7 +10,7 @@ int main(void)
 	int i;
 	unsigned char c = 0;
 
-	c = 0;
+	i = 0;
 	do {
 		putchar(c);
 		c++;
