@@ -7,17 +7,17 @@
  */
 int main(void)
 {
+	unsigned char c = '0';
 	int i;
-	unsigned char c = 0;
 
-	i = 0;
-	do {
+	for (i = 0; i < 10; i++)
+	{
 		putchar(c);
 		c++;
-	} while (i < 10);
+	}
 
-	c = 1;
-	while (i < 6)
+	c = '1';
+	for (i = 0; i < 6; i++)
 	{
 		putchar('0' + c);
 		c++;
