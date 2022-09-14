@@ -8,7 +8,6 @@
 
 int main(void)
 {
-	int _abs(int);
 	int print_last_digit(int);
 	return (0);
 }
