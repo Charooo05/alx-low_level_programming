@@ -10,7 +10,6 @@
 
 int _abs(int c)
 {
-	c = ' ';
 	if (c > 0)
 	{
 		_putchar(c);
@@ -21,7 +20,7 @@ int _abs(int c)
 	}
 	else
 	{
-		_putchar((c) + 45);
+		_putchar((c) * 45);
 	}
 	return (0);
 }
