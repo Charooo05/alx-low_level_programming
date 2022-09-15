@@ -8,6 +8,6 @@
 
 int main(void)
 {
-	void print_line(int n);
+	void print_square(int size);
 	return (0);
 }
