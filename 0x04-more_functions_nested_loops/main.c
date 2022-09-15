@@ -8,6 +8,6 @@
 
 int main(void)
 {
-	void print_square(int size);
+	void print_diagonal(int n);
 	return (0);
 }
