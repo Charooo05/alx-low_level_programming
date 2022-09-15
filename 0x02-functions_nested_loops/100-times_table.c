@@ -1,20 +1,22 @@
 #include "main.h"
 /**
- * times_table - prints the times table from 1 to 9
+ * print_times_table - prints the times table from 1 to 9
  *
+ * @n: any number
  *
  */
 
 void print_times_table(int n)
 {
-	int n;
 	int b;
 
-	for (n = 0; n <= 9; n++)
+	for (n = n; n <= n; n++)
 	{
-		for (b = 0; b <= 9; b++)
+		for (b = 0; b <= n; b++)
 		{
-			if (b == 0)
+			if (n > 15)
+				break;
+			else if (b == 0)
 			{
 				_putchar(48);
 			}
