@@ -8,6 +8,6 @@
 
 int main(void)
 {
-	void more_numbers(void);
+	void print_line(int n);
 	return (0);
 }
