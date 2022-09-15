@@ -8,6 +8,6 @@
 
 int main(void)
 {
-	void print_diagonal(int n);
+	void print_triangle(int size);
 	return (0);
 }
