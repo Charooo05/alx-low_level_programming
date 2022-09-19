@@ -8,6 +8,6 @@
 
 int main(void)
 {
-	void rev_string(char *s);
+	void puts2(char *str);
 	return (0);
 }
