@@ -8,6 +8,6 @@
 
 int main(void)
 {
-	void print_rev(char *s);
+	void rev_string(char *s);
 	return (0);
 }
