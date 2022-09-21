@@ -1,5 +1,4 @@
 #include "main.h"
-#include "strlen.c"
 
 /**
  * _strcmp - compares two strings
@@ -13,8 +12,16 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int n;
+	int i, n;
 
-	n = _strlen(s1) - _strlen(s2);
-	return (n);
+	for (i = 0; s1[i] && s2[i]; i++)
+	{
+		n = s1[i] - s2[i];
+
+		if (n != 0)
+		return (n);
+
+		else if (s1[i] || s2[i])
+			return (0);
+	}
 }
