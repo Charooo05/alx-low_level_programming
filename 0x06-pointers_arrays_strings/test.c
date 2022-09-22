@@ -8,6 +8,6 @@
 
 int main(void)
 {
-	char *cap_string(char *);
+	char *leet(char *);
 	return (0);
 }
