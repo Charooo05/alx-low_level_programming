@@ -10,22 +10,20 @@
 
 char *leet(char *s)
 {
-	int i;
+	int i, b;
+	int c[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	int n[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 
 	for (i = 0; s[i]; i++)
 	{
-		if (s[i] == 'a' || s[i] == 'A')
-			s[i] = '4';
-		else if (s[i] == 'e' || s[i] == 'E')
-			s[i] = '3';
-		else if (s[i] == 'o' || s[i] == 'O')
-			s[i] = '0';
-		else if (s[i] == 't' || s[i] == 'T')
-			s[i] = '7';
-		else if (s[i] == 'l' || s[i] == 'L')
-			s[i] = '1';
-		else
-			continue;
+		for (b = 0; b < 10; b++)
+		{
+			if (s[i] == c[b])
+			{
+				s[i] = n[b];
+				break;
+			}
+		}
 	}
 	return (s);
 }
