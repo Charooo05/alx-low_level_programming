@@ -10,21 +10,26 @@
 
 char *cap_string(char *a)
 {
-	int i;
+	int i, b;
+	int s[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
 	for (i = 0; a[i]; i++)
 	{
 		if (i == 0 && (a[i] >= 'a' && a[i] <= 'z'))
-				a[i] = a[i] - 32;
+			a[i] = a[i] - 32;
 
 		if (a[i] >= 'A' && a[i] <= 'z')
 		{
 			continue;
 		}
-		else if (a[i] < 48 || a[i] > 122 || a[i] == '\t')
+		else
 		{
-			if (a[i + 1] >= 'a' && a[i + 1] <= 'z')
-				a[i + 1] = a[i + 1] - 32;
+			for (b = 0; s[b] != '\0'; b++)
+			{
+				if (a[i] == s[b])
+					if (a[i + 1] >= 'a' && a[i + 1] <= 'z')
+						a[i + 1] = a[i + 1] - 32;
+			}
 		}
 	}
 	return (a);
