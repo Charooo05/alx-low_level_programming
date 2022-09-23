@@ -11,13 +11,22 @@
 char *rot13(char *s)
 {
 	int i, j;
-	int rotA[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M'};
-	int rotB[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'};
-	int rotC[] = {'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
-	int rotD[] = {'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
-
+	char rotA[] = "AaBbCcDdEeFfGgHhIiJjKkLlMm";
+	char rotB[] = "NnOoPpQqRrSsTtUuVvWwXxYyZz";
+	
 	for (i = 0; s[i]; i++)
 	{
-		for (j = 0; j < 13; j++)
+		for (j = 0; rotA[j]; j++)
 		{
-			if (s[i] == rotA[j] || rot	
+			if (s[i] == rotA[j])
+			{
+				s[i] = rotB[j];
+			}
+			if (s[i] == rotB[j])
+			{
+				s[i] = rotA[j];
+			}
+		}
+	}
+	return (s);
+}
