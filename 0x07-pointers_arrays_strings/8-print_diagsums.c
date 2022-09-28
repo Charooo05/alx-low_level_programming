@@ -11,8 +11,8 @@
 void print_diagsums(int *a, int size)
 {
 	int i;
-	int diagonal_1 = a[0];
-	int diagonal_2 = a[size];
+	int diagonal_1 = 0;
+	int diagonal_2 = 0;
 
 	for (i = 0; i < size; i++)
 	{
