@@ -10,7 +10,7 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i, j, n;
+	int i;
 	int diagonal_1 = a[0];
 	int diagonal_2 = a[size];
 
