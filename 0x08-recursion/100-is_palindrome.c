@@ -3,6 +3,7 @@
 /**
  * check - checks a string if it is a palindrome
  *
+ * @s: string
  * @i: iterator 1
  * @j: iterator 2
  *
