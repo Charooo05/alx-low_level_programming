@@ -20,18 +20,10 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (1);
 	}
-	else
-	{
-		i = 1;
-		multi = 1;
+	else if (argc == 3)
+		multi = atoi(argv[1]) * atoi(argv[2]);
 
-		while (argc < 4)
-		{
-			multi *= atoi(argv[i]);
-			i++;
-		}
 	printf("%d\n", multi);
-	}
 
 	return (0);
 }
