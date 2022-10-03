@@ -30,8 +30,8 @@ int main(int argc, char **argv)
 			multi *= atoi(argv[i]);
 			i++;
 		}
+	printf("%d\n", multi);
 	}
 
-	printf("%d\n", multi);
 	return (0);
 }
