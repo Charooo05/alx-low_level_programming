@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 		i = 1;
 		multi = 1;
 
-		while (i < argc)
+		while (argc < 4)
 		{
 			multi *= atoi(argv[i]);
 			i++;
