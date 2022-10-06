@@ -5,6 +5,7 @@
  *
  * @b: size of byte to be allocated
  *
+ * Return: A pointer or void
  */
 
 void *malloc_checked(unsigned int b)
