@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * free_dog - frees dog
  * @d: pointer to dog
