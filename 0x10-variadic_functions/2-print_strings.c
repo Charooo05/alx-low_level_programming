@@ -12,7 +12,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	char *s;
 	va_list parameters;
-	
+
 
 	va_start(parameters, n);
 
@@ -22,7 +22,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (i = 1; i <= n; i++)
 	{
 		s = va_arg(parameters, char *);
-		if (s == NULL) 
+		if (s == NULL)
 			printf("(nil)");
 		else if (i == n)
 			printf("%s", s);
