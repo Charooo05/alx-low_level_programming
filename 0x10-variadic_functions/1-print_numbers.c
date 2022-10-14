@@ -13,7 +13,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list parameters;
 
 	va_start(parameters, n);
-
+	if (n == 0)
+	{
+		printf("0\n");
+		return;
+	}
 	i = 1;
 	while (i < n)
 	{
