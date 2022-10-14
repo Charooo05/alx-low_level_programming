@@ -15,7 +15,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_start(parameters, n);
 	if (n == 0)
 	{
-		printf("0\n");
+		printf("\n");
 		return;
 	}
 	i = 1;
