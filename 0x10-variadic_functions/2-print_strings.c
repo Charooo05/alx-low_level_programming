@@ -14,7 +14,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list parameters;
 
 
-	va_start(parametIers, n);
+	va_start(parameters, n);
 	if (n == 0)
 	{
 		printf("\n");
@@ -29,7 +29,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		else
 		printf("%s%s", s, separator);
 	}
-	printf("%s", s);
+	printf("%s", va_arg(parameters, char *));
 	va_end(parameters);
 	printf("\n");
 }
