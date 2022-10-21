@@ -2,12 +2,19 @@
 #define LISTS_H
 #include <stddef.h>
 
+/**
+ * struct node - template for node in a single linked list
+ * @str: first member of struct
+ * @len: second member of struct
+ * @next: pointer to next node in list
+ */
+
 typedef struct node
 {
 	char *str;
 	int len;
 	struct node *next;
-}list_t;
+} list_t;
 
 int _putchar(char c);
 size_t print_list(const list_t *h);
